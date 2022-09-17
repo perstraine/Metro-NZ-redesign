@@ -1,0 +1,39 @@
+@import "../../../variables.css";
+
+.navColOne {
+  background-color: var(--metro-red);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.navColOne:first-child {
+  color: #ffffff;
+}
+
+.navColOne :not(:first-child) {
+  background-color: #ffffff;
+  color: var(--metro-red);
+}
+
+.navColOne span {
+  margin: 10px;
+  padding: 8px 16px;
+}
+
+.navColOne span:first-of-type {
+  margin-right: auto;
+  /* display: none; */
+}
+
+.navColTwo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navColTwo img {
+  /* margin-right: auto; */
+}

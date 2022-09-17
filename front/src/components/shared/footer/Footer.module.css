@@ -1,0 +1,56 @@
+@import "../../../variables.css";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--metro-black);
+  color: #ffffff;
+  padding: 0 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerCol {
+  flex: 1;
+}
+
+.footerCol span {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerCol span > img {
+  margin: 0 10px 0 0;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #ffffff40;
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding:15px 0px;
+}
+
+.bottom section {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bottom section p {
+}
+
+.bottom section p:first-of-type {
+  margin-right: auto;
+}
+
+.bottom section :not(:first-of-type) {
+  /* margin-right: auto; */
+  /* border: 2px solid blue; */
+  margin-left: 20px;
+}
