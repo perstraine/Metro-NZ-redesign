@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px;
+  padding: 100px 100px 0;
 }
 
 .newsletter form {
@@ -20,8 +20,10 @@
   letter-spacing: -0.5px;
 }
 
-.newsletter p {
-  width: 50%;
+.newsletter p:last-of-type {
+  color: var(--metro-grey);
+  padding-top: 40px;
+  font-size: 0.9rem;
 }
 
 .newsletter input {
@@ -36,7 +38,7 @@ input:focus {
   outline: none;
 }
 
-button {
+.newsletter button {
   position: absolute;
   right: 0;
   top: 0;
@@ -48,4 +50,18 @@ button {
   padding: 0 20px;
   color: #ffffff;
   font-weight: 800;
+}
+
+.newsletter p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  width: 650px;
+  text-align: center;
+}
+.newsletter p img {
+  width: 14px;
+  margin-left: 6px;
 }

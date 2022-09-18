@@ -6,16 +6,13 @@ import MagGlass from "./assets/mag-glass.svg";
 
 export default function Nav() {
   const showDropdown = () => {
-    console.log("hi");
     const dropdown = document.querySelector("#dropdown");
     dropdown.classList.toggle(styles["active"]);
-    console.log(dropdown.classList);
   };
 
   const hideDropdown = () => {
     const dropdown = document.querySelector("#dropdown");
     dropdown.classList.remove(styles["active"]);
-    console.log(dropdown.classList);
   };
   return (
     <>
