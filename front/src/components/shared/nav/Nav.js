@@ -1,8 +1,22 @@
 import React from "react";
 import styles from "./Nav.module.css";
 import Logo from "./assets/metro-logo.png";
+import DownArrow from "./assets/down-arrow.svg";
+import MagGlass from "./assets/mag-glass.svg";
 
 export default function Nav() {
+  const showDropdown = () => {
+    console.log("hi");
+    const dropdown = document.querySelector("#dropdown");
+    dropdown.classList.toggle(styles["active"]);
+    console.log(dropdown.classList);
+  };
+
+  const hideDropdown = () => {
+    const dropdown = document.querySelector("#dropdown");
+    dropdown.classList.remove(styles["active"]);
+    console.log(dropdown.classList);
+  };
   return (
     <>
       <div className={styles.nav}>
@@ -13,12 +27,27 @@ export default function Nav() {
         </div>
         <div className={styles.navColTwo}>
           <img src={Logo} alt="" />
-          <p>Management Services</p>
+          <span>
+            <p onClick={showDropdown}>
+              Management Services <img src={DownArrow} alt="" />
+            </p>
+            <div
+              className={styles.dropdown}
+              id="dropdown"
+              onMouseLeave={hideDropdown}
+            >
+              <p>Property Management</p>
+              <p>Building Management</p>
+              <p>Body Corporate Administration</p>
+              <p>Get a free appraisal</p>
+            </div>
+          </span>
+
           <p>Find a Rental</p>
           <p>News</p>
           <p>About Us</p>
           <p>Contact</p>
-          <img src="" alt="" />
+          <img src={MagGlass} alt="" />
         </div>
       </div>
     </>
