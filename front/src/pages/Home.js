@@ -1,4 +1,4 @@
-import Hero from "./Home";
+import Hero from "../components/shared/hero/Hero";
 import React from "react";
 import Nav from "../components/shared/nav/Nav";
 import NewsletterSignup from "../components/NewsletterSignup/NewsletterSignup";
@@ -8,8 +8,8 @@ export default function Home() {
 	return (
 		<>
 			<Nav />
-			<NewsletterSignup />
 			<Hero />
+			<NewsletterSignup />
 			<Footer />
 		</>
 	);
