@@ -1,4 +1,4 @@
-@import "../../../variables.css";
+@import "../../variables.css";
 
 /* hero background section */
 
@@ -48,7 +48,7 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 90vw;
+	width: 84vw;
 	height: 10vh;
 }
 
@@ -120,7 +120,7 @@
 
 .searchBoxInnerContainer {
 	display: flex;
-	width: 90vw;
+	width: 84vw;
 	height: 26vh;
 	justify-content: space-around;
 	align-items: center;
