@@ -1,0 +1,7 @@
+.heroBackground {
+	background-image: url(./assests//hero_background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
