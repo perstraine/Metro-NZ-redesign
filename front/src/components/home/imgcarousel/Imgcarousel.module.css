@@ -1,8 +1,7 @@
-#progress {
-  position: fixed;
-  top: 20px;
-  left: 20px;
+#container{
+  padding-top: 80px;
 }
+
 
 .list {
   display: flex;

@@ -90,7 +90,7 @@ export default function Imgcarousel() {
   };
 
   return (
-    <>
+    <div id={styles.container}>
       <motion.ul
         ref={ref}
         onMouseMove={handleMouseMove}
@@ -105,6 +105,6 @@ export default function Imgcarousel() {
           </motion.li>
         ))}
       </motion.ul>
-    </>
+    </div>
   );
 }
