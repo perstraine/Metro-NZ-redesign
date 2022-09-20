@@ -44,18 +44,20 @@ export default function Services() {
 					</div>
 					{/* card 3 */}
 					<div className={styles.cards}>
-						<div>
-							<img className={styles.iconCards} src={homeIcon} alt="" />
-						</div>
-						<div className={styles.innerCards}>
-							<h4>FIND A RENTAL</h4>
-						</div>
-						<div className={styles.innerCards}>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
-								pulvinar dapibus leo.
-							</p>
-						</div>
+						<a href="/">
+							<div>
+								<img className={styles.iconCards} src={homeIcon} alt="" />
+							</div>
+							<div className={styles.innerCards}>
+								<h4>FIND A RENTAL</h4>
+							</div>
+							<div className={styles.innerCards}>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+									mattis, pulvinar dapibus leo.
+								</p>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>

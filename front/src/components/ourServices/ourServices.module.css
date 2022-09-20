@@ -36,10 +36,19 @@
 	flex-direction: column;
 	justify-content: center;
 	width: 24vw;
-	height: 33.48vh;
+	height: 38vh;
 	border: 1px solid #dadada;
 	box-shadow: 1px 3px 4px 1.5px #dadada;
 	padding: 0 1rem;
+	cursor: pointer;
+}
+
+.cards:hover {
+	background-color: var(--metro-light-grey);
+}
+
+.middleCard:hover {
+	background-color: var(--metro-black);
 }
 
 .middleCard {
