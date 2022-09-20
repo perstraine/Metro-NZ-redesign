@@ -8,7 +8,7 @@ export default function WhoAreWe() {
 			<div className={styles.mainContainer}>
 				<div className={styles.innerContainer}>
 					<div className={styles.imageContainer}>
-						<img src={GroupPhoto} alt="" />
+						<img className={styles.groupPhoto} src={GroupPhoto} alt="" />
 					</div>
 
 					<section className={styles.whoWeAreContainer}>

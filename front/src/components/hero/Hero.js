@@ -6,10 +6,10 @@ export default function Hero() {
 
 	const Suburbs = [
 		{ value: "Any" },
-		{ value: "Newlands" },
-		{ value: "Te Aro" },
 		{ value: "Johnsonville" },
 		{ value: "Karori" },
+		{ value: "Newlands" },
+		{ value: "Te Aro" },
 	];
 
 	const houseType = [{ value: "Any" }, { value: "House" }, { value: "Apartment" }, { value: "Townhouse" }];
@@ -22,6 +22,28 @@ export default function Hero() {
 		{ value: "4" },
 		{ value: "5" },
 		{ value: "6" },
+	];
+
+	const Regions = [
+		{ value: "All" },
+		{ value: "Auckland" },
+		{ value: "Bay of Plenty" },
+		{ value: "Canterbury" },
+		{ value: "Marlborough" },
+		{ value: "Otago" },
+		{ value: "Waikato" },
+		{ value: "Wellington" },
+	];
+
+	const Services = [
+		{ value: "Property Management" },
+		{ value: "Building Management" },
+		{ value: "Rental Property Management" },
+		{ value: "Body Corporate Administration" },
+		{ value: "Investment Properties" },
+		{ value: "Tenanted Property Sales" },
+		{ value: "Healthy Homes Standards" },
+		{ value: "Decluttering Service" },
 	];
 
 	return (
@@ -63,8 +85,8 @@ export default function Hero() {
 						</div>
 					</div>
 				</div>
-
-				<div className={styles.searchBoxOutterContainer}>
+				{/* find a rental property section */}
+				<div className={active === true ? styles.searchBoxOutterContainer : styles.searchBoxOutterContainerInactive}>
 					<div className={styles.searchBoxInnerContainer}>
 						<div className={styles.dropdownBoxContainer}>
 							<div className={styles.dropdownBox}>
@@ -104,6 +126,43 @@ export default function Hero() {
 							</div>
 						</div>
 						<div className={styles.buttonContainer}>
+							<button className={styles.searchButton}>Search</button>
+						</div>
+					</div>
+				</div>
+				{/* find a property manager section */}
+				<div
+					className={active === false ? styles.propManagerOutterContainer : styles.propManagerOutterContainerInactive}
+				>
+					<div className={styles.propManagerInnerContainer}>
+						<div className={styles.proManagerSearch}>
+							{/*  */}
+							<div className={styles.dropdownBox}>
+								<label className={styles.dropdownHeading}>Select Region</label>
+								<select className={styles.arrowPropManager}>
+									<option value="" selected disabled hidden>
+										Select a Region
+									</option>
+									{Regions.map((region) => (
+										<option value={region.value}>{region.value}</option>
+									))}
+								</select>
+							</div>
+							{/*  */}
+							<div className={styles.dropdownBox}>
+								<label className={styles.dropdownHeading}>Select Service</label>
+								<select className={styles.arrowPropManager}>
+									<option value="" selected disabled hidden>
+										Select a Service
+									</option>
+									{Services.map((services) => (
+										<option value={services.value}>{services.value}</option>
+									))}
+								</select>
+							</div>
+							{/*  */}
+						</div>
+						<div className={styles.buttonContainerPropManager}>
 							<button className={styles.searchButton}>Search</button>
 						</div>
 					</div>

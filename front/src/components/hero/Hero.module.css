@@ -111,11 +111,15 @@
 	border-bottom: 4px solid var(--metro-black);
 }
 
-/* hero seachbox options */
+/* Find a rental property section */
 
 .searchBoxOutterContainer {
 	display: flex;
 	justify-content: center;
+}
+
+.searchBoxOutterContainerInactive {
+	display: none;
 }
 
 .searchBoxInnerContainer {
@@ -177,4 +181,51 @@
 	height: 5.5vh;
 	font-size: 1rem;
 	font-weight: 600;
+}
+
+/* find a property manager section */
+
+.propManagerOutterContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.propManagerOutterContainerInactive {
+	display: none;
+}
+
+.propManagerInnerContainer {
+	display: flex;
+	width: 84vw;
+	height: 26vh;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--metro-black);
+}
+
+.proManagerSearch {
+	display: flex;
+	justify-content: space-evenly;
+	width: 70vw;
+	background-color: var(--metro-black);
+}
+
+.arrowPropManager {
+	appearance: none;
+	background-image: url(./assests/grey_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: calc(100% - 1em) center;
+	background-size: 1.5em;
+	background-color: white;
+	width: 25vw;
+	height: 7.3vh;
+	border-radius: 5px;
+	padding-left: 1.5rem;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: #64626a;
+}
+
+.buttonContainerPropManager {
+	padding: 4rem 8rem 0 0;
 }

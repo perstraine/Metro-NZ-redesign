@@ -1,0 +1,66 @@
+.servicesMainContainer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	height: 75vh;
+	padding-top: 4rem;
+}
+
+.servicesInnerContainer {
+	display: flex;
+	flex-direction: column;
+	width: 84vw;
+}
+
+.headingContainer h6 {
+	color: var(--metro-red);
+	font-size: 1.06em;
+}
+
+.headingContainer h1 {
+	font-size: 2.625em;
+	color: var(--metro-black);
+	width: 50vw;
+	height: 13.56vh;
+}
+
+.cardsContainer {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1.2rem;
+}
+
+.cards,
+.middleCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 24vw;
+	height: 33.48vh;
+	border: 1px solid #dadada;
+	box-shadow: 1px 3px 4px 1.5px #dadada;
+	padding: 0 1rem;
+}
+
+.middleCard {
+	background-color: var(--metro-red);
+}
+
+.innerCards {
+	font-size: 1.06em;
+	padding: 1rem;
+	letter-spacing: 0.07em;
+}
+
+.middleInnerCard {
+	font-size: 1.06em;
+	padding: 1rem;
+}
+
+.middleCardText {
+	color: white;
+}
+
+.iconCards {
+	padding: 2rem 0 0 1rem;
+}
