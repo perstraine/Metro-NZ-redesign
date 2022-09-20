@@ -1,0 +1,15 @@
+const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+
+const app = express();
+
+app.use(bodyParser.json());
+app.use(cors());
+
+const { searchRouter } = require("./routes/search.routes");
+const PORT = 4000;
+
+app.use(searchRouter);
+
+app.listen(PORT, () => console.log(`listening on ${PORT}`));
