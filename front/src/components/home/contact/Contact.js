@@ -14,8 +14,7 @@ export default function Contact() {
   const [index, setIndex] = useState(0)
 
   function handleClick(increase) {
-    console.log('clicked')
-    setIndex(index + 1)
+    (index + increase) < 0? setIndex(5): setIndex(index + increase)
   }
 
   return (
@@ -37,7 +36,7 @@ export default function Contact() {
           <img src={images[(index + 3) % 6]} alt="sponsor" />
         </div>
         <div onClick={() => handleClick(-1)} className={styles.arrow}>
-          <img src={right} alt="left arrow" />
+          <img src={right} alt="right arrow" />
         </div>
       </div>
       <div id={styles.join}>
