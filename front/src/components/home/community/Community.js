@@ -1,8 +1,4 @@
 import styles from './Community.module.css'
-import img1 from './assets/img1.png'
-import img2 from './assets/img2.png'
-import img3 from "./assets/img3.png";
-
 export default function Community() {
     return (
       <div id={styles.container}>

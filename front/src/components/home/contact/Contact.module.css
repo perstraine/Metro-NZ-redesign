@@ -1,4 +1,5 @@
 #container{
+    padding-top: 100px;
     font-family: 'Poppins';
     display: flex;
     flex-direction: column;
