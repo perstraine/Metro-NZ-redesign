@@ -11,10 +11,20 @@
     background-color: white;
     width: 70%;
     justify-content: space-around;
+    height: 157px;
     z-index: 1;
 }
+
+.arrow{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #arrowRight{
     rotate: 180deg;
+    z-index: 5;
 }
 
 #join{

@@ -8,7 +8,7 @@ export default function Community() {
       <div id={styles.container}>
         <div id={styles.left}>
           <div id={styles.leftContainer}>
-            <div id={styles.sectionTitle}>COMMUNTY SERVICE</div>
+            <div id={styles.sectionTitle}>COMMUNITY SERVICE</div>
             <div id={styles.title}>WE KEEP OUR COMMUNITY IN MIND</div>
             <div id={styles.content}>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
