@@ -1,12 +1,139 @@
-.listingComponents {
-  background-color: black;
-  color: white;
+@import "../../variables.css";
+
+.propertyListingCard {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   width: 200px;
   height: 200px;
+  margin: 0px;
+  position: relative;
+  width: 380px;
+  height: 380px;
+  /* margin: 50px 50px 200px; */
 }
 
 .image {
-  width: 300px;
-  height: 300px;
+  width: 380px;
+  height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* position: absolute; */
+  background-size: cover;
+  top: 0;
+  /* left: 0; */
 }
 
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+  background-color: #ffffff;
+  position: absolute;
+  height: 310px;
+  width: 310px;
+  top: 0;
+  padding: 25px;
+  /* margin: 300px 0;/ */
+  transform: translateY(300px);
+  box-shadow: 1px 5px 5px #6e6e6e6b;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  /* border: 2px solid pink; */
+  width: 100%;
+
+  /* margin-left: -5px; */
+}
+
+.icons span {
+  display: flex;
+
+  /* border: 2px solid green; */
+  margin-right: 20px;
+}
+
+.icons span img {
+  margin: 0 6px;
+  /* border: 2px solid green; */
+  width: 35px;
+}
+
+.icons span p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  /* border: 2px solid green; */
+}
+
+.price {
+  margin: 0;
+}
+
+.price p {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.listingTitle {
+  /* border: 2px solid blue; */
+  font-size: 25px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.buttonAndInfo {
+  display: flex;
+  /* border: 2px solid black; */
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7px 0;
+}
+
+.buttonAndInfo section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonAndInfo p {
+  /* border: 2px solid black; */
+  display: flex;
+  text-decoration: solid var(--metro-grey);
+  /* text-decoration: 1px solid black; */
+  text-transform: none;
+  color: var(--metro-grey);
+  cursor: pointer;
+}
+
+.buttonAndInfo button {
+  padding: 18px 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--metro-red);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.buttonAndInfo img {
+  /* width: 3px; */
+  height: 10px;
+  margin: 0 0 -1px 5px;
+}
+
+.metroLogo {
+  position: absolute;
+  top: 10px;
+}

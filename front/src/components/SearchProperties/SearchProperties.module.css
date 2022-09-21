@@ -1,0 +1,138 @@
+@import "../../variables.css";
+
+.searchProperties {
+  background-color: var(--metro-black);
+  /* height: 500px; */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.searchProperties form {
+  display: flex;
+  flex-direction: column;
+}
+
+form select {
+  /* padding-right: 20px; */
+  color: var(--metro-grey);
+  /* margin: px; */
+}
+
+form label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* margin: 2px 0; */
+}
+
+select,
+input {
+  padding: 15px;
+  border-radius: 5px;
+  outline: 0;
+  font-size: 1.2rem;
+}
+
+.rowOne,
+.rowTwo {
+  /* margin: 1px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rowOne span,
+.rowTwo span {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* border: 2px solid pink; */
+}
+
+#petsAndAvail {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+#petsAndAvail span {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 20px;
+
+  align-self: flex-end;
+  margin-top: 18px;
+}
+
+.dash {
+  /* display: none; */
+  align-self: flex-end;
+  margin-bottom: 12px;
+}
+
+form button {
+  background-color: var(--metro-red);
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  color: var(--metro-red);
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: background 100ms;
+  cursor: pointer;
+}
+
+[type="checkbox"]:checked {
+  background-color: currentcolor;
+}
+
+#maxRent {
+  margin-left: -120px;
+}
+
+#budget {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  /* display: none; */
+  margin: 0;
+  /* border: 2px solid black; */
+}
+
+#budget span {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#suburb,
+#propertyType,
+#keywords {
+  width: 400px;
+}
+
+#minRent,
+#maxRent,
+#bedrooms,
+#bathrooms {
+  width: 150px;
+}

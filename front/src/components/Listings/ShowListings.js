@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import style from "./ShowListings.module.css";
+import styles from "./ShowListings.module.css";
 import Search from "../../pages/Search";
 import ListingComponents from "../ListingComponents/ListingComponents";
 
@@ -23,13 +23,18 @@ export default function Results() {
 
   return (
     <>
-      xxx
-      <div className={style.showListings}>
-        {listingsToShow !== null &&
-          listingsToShow.map((listing) => {
-            // console.log(listing);
-            return <ListingComponents listing={listing} />;
-          })}
+      <div className={styles.showListings}>
+        <div className={styles.listingsSection}>
+          {listingsToShow !== null &&
+            listingsToShow.map((listing) => {
+              // console.log(listing);
+              return (
+                <div className={styles.listingCard}>
+                  <ListingComponents listing={listing} style={styles} />
+                </div>
+              );
+            })}
+        </div>
       </div>
     </>
   );

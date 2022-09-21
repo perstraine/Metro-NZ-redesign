@@ -1,0 +1,32 @@
+.showListings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listingsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1500px;
+  /* border: 2px solid black; */
+}
+
+.image {
+  /* width: 380px;
+  height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover; */
+}
+
+.listingCard {
+  margin: 10px;
+  /* border: 2px solid black; */
+  padding: 40px 20px 0px;
+  height: 680px;
+  display: flex;
+  justify-content: center;
+}
