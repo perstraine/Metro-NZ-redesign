@@ -1,6 +1,6 @@
 import styles from "./callUsNow.module.css";
-import callUsPhoto from "./assests/group_photo_02.png";
-import phoneIcon from "./assests/phone.png";
+import callUsPhoto from "./assets/group_photo_02.png";
+import phoneIcon from "./assets/phone.png";
 
 export default function CallUsNow() {
 	return (
