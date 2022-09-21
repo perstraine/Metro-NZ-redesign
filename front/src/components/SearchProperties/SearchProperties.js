@@ -62,17 +62,17 @@ export default function SearchProperties() {
       ...(formObject.pets === "true" && {
         pets: true,
       }),
+      bedrooms: `{$gte: ${parseInt(formObject.bedrooms)}}`,
       //   ...(formObject.bedrooms !== "Any" && {
-      //     bedrooms: `{$gte: ${parseInt(formObject.bedrooms)}}`,
-      //     // bedrooms: parseInt(formObject.bedrooms),
+      // bedrooms: parseInt(formObject.bedrooms),
+      // }),
+      // ...(formObject.bathrooms !== "Any" && {
+      //   bathrooms: parseInt(formObject.bathrooms),
+      // }),
+      // ...(formObject.minRent === "Any" &&
+      //   formObject.maxRent !== "Any" && {
+      //     "price.$numberDecimal": `{ $lte: ${parseInt(formObject.maxRent)}`,
       //   }),
-      //   ...(formObject.bathrooms !== "Any" && {
-      //     bathrooms: parseInt(formObject.bathrooms),
-      //   }),
-      //   ...(formObject.minRent === "Any" &&
-      //     formObject.maxRent !== "Any" && {
-      //       "price.$numberDecimal": `{ $lte: ${parseInt(formObject.maxRent)}`,
-      //     }),
     };
     await searchForProperties(newObj);
   };
