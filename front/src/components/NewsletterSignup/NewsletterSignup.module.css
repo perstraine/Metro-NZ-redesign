@@ -1,0 +1,67 @@
+@import "../../variables.css";
+
+.newsletter {
+  background-color: var(--metro-light-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 100px 0;
+}
+
+.newsletter form {
+  position: relative;
+  margin: 30px;
+}
+
+.newsletter h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 30px;
+  letter-spacing: -0.5px;
+}
+
+.newsletter p:last-of-type {
+  color: var(--metro-grey);
+  padding-top: 40px;
+  font-size: 0.9rem;
+}
+
+.newsletter input {
+  width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  outline: none;
+}
+
+.newsletter button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 10px;
+  background-color: var(--metro-red);
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.newsletter p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  width: 650px;
+  text-align: center;
+}
+.newsletter p img {
+  width: 14px;
+  margin-left: 6px;
+}

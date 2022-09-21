@@ -1,0 +1,74 @@
+@import "../../../variables.css";
+
+.navColOne {
+  background-color: var(--metro-red);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0 30px;
+}
+
+.navColOne:first-child {
+  color: #ffffff;
+}
+
+.navColOne :not(:first-child) {
+  background-color: #ffffff;
+  color: var(--metro-red);
+}
+
+.navColOne span {
+  margin: 10px;
+  padding: 8px 16px;
+}
+
+.navColTwo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px 30px;
+}
+
+.navColTwo span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.navColTwo img:first-of-type {
+  margin-right: auto;
+}
+
+.navColTwo p img:nth-of-type(1) {
+  margin-left: 6px;
+  margin-top: 2px;
+}
+
+.navColTwo p {
+  color: var(--metro-grey);
+  margin: 0 20px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  position: absolute;
+  margin: 30px 0;
+  width: 185px;
+  background-color: #ffffff;
+  padding: 10px 0;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.active {
+  opacity: 1;
+}
+
+.dropdown p {
+  margin: 12px;
+}
