@@ -47,13 +47,6 @@ export default function Hero() {
 		{ value: "Decluttering Service" },
 	];
 
-	const Addresses = [
-		{ value: "Address 01" },
-		{ value: "Address 02" },
-		{ value: "Address 03" },
-		{ value: "Address 04" },
-	];
-
 	return (
 		<>
 			<section>

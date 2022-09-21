@@ -1,4 +1,5 @@
 import styles from "./dropdownBox.module.css";
+import Arrow from "./assets/down_arrow.png";
 
 export default function DropdownBox() {
 	const Addresses = [
@@ -14,7 +15,7 @@ export default function DropdownBox() {
 					Not the property you were looking for? <br /> Select from the box below
 				</div>
 				<div className={styles.dropdownContainer}>
-					<select>
+					<select className={styles.selectDropdown}>
 						<option value="" selected disabled hidden>
 							Select METRO NZ property
 						</option>

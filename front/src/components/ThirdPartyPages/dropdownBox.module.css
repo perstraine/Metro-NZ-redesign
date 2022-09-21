@@ -8,7 +8,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* border: 1px solid black; */
 }
 
 .dropdowBoxText {
@@ -22,7 +21,7 @@
 	padding: 3rem 0 20rem 0;
 }
 
-select {
+.selectDropdown {
 	appearance: none;
 	background-image: url(./assets/down_arrow.png);
 	background-repeat: no-repeat;

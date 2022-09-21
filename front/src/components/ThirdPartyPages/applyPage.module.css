@@ -1,0 +1,13 @@
+.mainContainer {
+	display: flex;
+	width: 100vw;
+	height: auto;
+	justify-content: center;
+	margin-bottom: 20rem;
+}
+
+.outterContainer {
+	display: flex;
+	justify-content: space-between;
+	width: 60vw;
+}
