@@ -1,0 +1,64 @@
+.callMainContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	height: 65vh;
+	/* border: 1px solid black; */
+}
+
+.blackContainer {
+	display: flex;
+	background-color: var(--metro-black);
+	justify-content: center;
+	width: 100%;
+	height: 55vh;
+	/* border: 1px solid black; */
+}
+
+.innerBlackContainer {
+	display: flex;
+	align-items: center;
+	width: 84vw;
+}
+
+.callUsPhoto {
+	margin-top: -20rem;
+}
+
+.callInnerContainer {
+	display: flex;
+	width: 100%;
+	height: 27vh;
+	margin: 3em 0em 0 -12.5em;
+}
+
+.contactUsContainer {
+	display: flex;
+	width: 100%;
+	/* justify-content: space-between; */
+}
+
+.contactUsBox {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 19vw;
+	height: 25vh;
+	padding: 1.5em 0 0.5em 2em;
+	background-color: white;
+}
+
+.contactUsBox h4 {
+	font-size: 1.56em;
+}
+
+.contactUsText {
+	font-size: 3.5em;
+	font-weight: 900;
+	color: white;
+	width: 40vw;
+	height: auto;
+	padding-left: 4em;
+	letter-spacing: 0.1em;
+}
