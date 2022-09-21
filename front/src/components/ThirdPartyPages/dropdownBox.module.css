@@ -1,0 +1,38 @@
+.mainContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.innerContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid black; */
+}
+
+.dropdowBoxText {
+	text-align: center;
+	width: 19.8vw;
+	height: 8.1vh;
+	line-height: 2rem;
+}
+
+.dropdownContainer {
+	padding: 3rem 0 20rem 0;
+}
+
+select {
+	appearance: none;
+	background-image: url(./assets/down_arrow.png);
+	background-repeat: no-repeat;
+	background-position: calc(100% - 1em) center;
+	background-size: 1.5em;
+	background-color: white;
+	width: 38vw;
+	height: 7.75vh;
+	font-size: 1.13rem;
+	border-radius: 10px;
+	padding: 0 1.5rem;
+	color: #64626a;
+}

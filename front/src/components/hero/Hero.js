@@ -6,10 +6,12 @@ export default function Hero() {
 
 	const Suburbs = [
 		{ value: "Any" },
-		{ value: "Johnsonville" },
-		{ value: "Karori" },
-		{ value: "Newlands" },
-		{ value: "Te Aro" },
+		{ value: "Ponsonby" },
+		{ value: "Newmarket" },
+		{ value: "Epsom" },
+		{ value: "Parnell" },
+		{ value: "Balmoral" },
+		{ value: "Mission Bay" },
 	];
 
 	const houseType = [{ value: "Any" }, { value: "House" }, { value: "Apartment" }, { value: "Townhouse" }];
@@ -20,8 +22,7 @@ export default function Hero() {
 		{ value: "2" },
 		{ value: "3" },
 		{ value: "4" },
-		{ value: "5" },
-		{ value: "6" },
+		{ value: "5+" },
 	];
 
 	const Regions = [
@@ -44,6 +45,13 @@ export default function Hero() {
 		{ value: "Tenanted Property Sales" },
 		{ value: "Healthy Homes Standards" },
 		{ value: "Decluttering Service" },
+	];
+
+	const Addresses = [
+		{ value: "Address 01" },
+		{ value: "Address 02" },
+		{ value: "Address 03" },
+		{ value: "Address 04" },
 	];
 
 	return (
