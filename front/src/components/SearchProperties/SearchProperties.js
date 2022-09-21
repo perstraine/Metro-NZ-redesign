@@ -12,6 +12,29 @@ import {
 import { useState, useEffect } from "react";
 
 export default function SearchProperties() {
+  const initialFormData = Object.freeze({
+    suburb: "",
+    propertyType: "",
+    budget: "",
+    minRent: "",
+    maxRent: "",
+    bedrooms: "",
+    bathrooms: "",
+    pets: "",
+    availableNow: "",
+  });
+
+  const [formData, updateFormData] = useState(initialFormData);
+
+  //   const handleChange = (e) => {
+  //     updateFormData({
+  //       ...formData,
+
+  //       // Trimming any whitespace
+  //       [e.target.name]: e.target.value.trim(),
+  //     });
+  //   };
+
   //   const [suburbInput, setSuburbInput] = useState("All");
   //   const [propertyTypeInput, setPropertyTypeInput] = useState("All");
   //   const [minPriceInput, setMinPriceInput] = useState("All");
@@ -22,24 +45,52 @@ export default function SearchProperties() {
   //   const [hasPetInput, setHasPetInput] = useState();
   //   const [availNowInput, setAvailNowInput] = useState();
 
-  const [inputBody, setInputBody] = useState();
+  let newObj = {};
 
-  const searchForProperties = async (e) => {
+  const handleSearch = async (e) => {
     e.preventDefault();
     const data = new FormData(e.target);
     const formObject = Object.fromEntries(data.entries());
-    console.log(formObject);
+
+    newObj = {
+      ...(formObject.suburb !== "All" && {
+        "address.suburb": formObject.suburb.toLowerCase(),
+      }),
+      ...(formObject.propertyType !== "All" && {
+        "property type": formObject.propertyType.toLowerCase(),
+      }),
+      ...(formObject.pets === "true" && {
+        pets: true,
+      }),
+      //   ...(formObject.bedrooms !== "Any" && {
+      //     bedrooms: `{$gte: ${parseInt(formObject.bedrooms)}}`,
+      //     // bedrooms: parseInt(formObject.bedrooms),
+      //   }),
+      //   ...(formObject.bathrooms !== "Any" && {
+      //     bathrooms: parseInt(formObject.bathrooms),
+      //   }),
+      //   ...(formObject.minRent === "Any" &&
+      //     formObject.maxRent !== "Any" && {
+      //       "price.$numberDecimal": `{ $lte: ${parseInt(formObject.maxRent)}`,
+      //     }),
+    };
+    await searchForProperties(newObj);
+  };
+
+  const searchForProperties = async (searchObj) => {
+    // e.preventDefault();
+    // console.log(formObject);
     const response = await axios.post(
       "http://localhost:4000/search/results",
-      formObject
+      searchObj
     );
-    console.log(response);
+    console.log("hii", response);
   };
 
   return (
     <>
       <div className={style.searchProperties}>
-        <form action="" onSubmit={searchForProperties}>
+        <form action="" onSubmit={handleSearch}>
           <label htmlFor="suburb">Suburb</label>
           <select name="suburb" id="">
             {suburbs.map((suburb) => {

@@ -38,6 +38,7 @@
   align-items: center;
   position: relative;
 }
+
 .navColTwo img:first-of-type {
   margin-right: auto;
 }
@@ -51,8 +52,14 @@
   color: var(--metro-grey);
   margin: 0 20px;
   font-size: 0.9rem;
+  font-weight: 500;
   display: flex;
   align-items: center;
+}
+
+.navColTwo p:hover {
+  color: var(--metro-red);
+  cursor: pointer;
 }
 
 .dropdown {

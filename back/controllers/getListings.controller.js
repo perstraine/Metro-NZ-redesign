@@ -1,19 +1,6 @@
 const { MongoClient } = require("mongodb");
 
-const searchListings = async (req, res) => {
-  const {
-    suburb,
-    propertyType,
-    bedrooms,
-    bathrooms,
-    minRent,
-    maxRent,
-    pets,
-    availableNow,
-  } = req.body;
-  const query = req.body;
-
-  console.log(req.body);
+const getListings = async (req, res) => {
   async function main() {
     const uri =
       "mongodb+srv://teamCat:mission6b!@cluster0.tmoamld.mongodb.net/?retryWrites=true&w=majority";
@@ -28,15 +15,13 @@ const searchListings = async (req, res) => {
     }
   }
   async function search(client) {
-    // console.log(bedrooms);
     const result = await client
       .db("mission6b")
       .collection("metroNZ")
-      .find(query)
+      .find()
       .toArray();
     if (result) {
       res.send(result);
-      //   console.log(result);
     } else {
       console.log(`no listings found`);
     }
@@ -44,4 +29,4 @@ const searchListings = async (req, res) => {
   main();
 };
 
-module.exports = { searchListings };
+module.exports = { getListings };
