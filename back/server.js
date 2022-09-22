@@ -1,30 +1,17 @@
-const { MongoClient } = require("mongodb");
 const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 
-async function main() {
-	const uri = "mongodb+srv://teamCat:mission6b!@cluster0.tmoamld.mongodb.net/?retryWrites=true&w=majority";
+const app = express();
 
-	const client = new MongoClient(uri);
+app.use(bodyParser.json());
+app.use(cors());
 
-	try {
-		await client.connect();
+const { searchRouter } = require("./routes/search.routes");
+const { listingRouter } = require('./routes/listing.routes')
+const PORT = 4000;
 
-		await findImage(client);
-	} catch (e) {
-		console.error(e);
-	} finally {
-		await client.close();
-	}
-}
-main().catch(console.error);
+app.use(searchRouter);
+app.use(listingRouter)
 
-async function findImage(client) {
-	const result = await client.db("mission6b").collection("metroNZ").find({ houseId: "04" });
-
-	if (result) {
-		console.log(`found image`);
-		console.log(result);
-	} else {
-		console.log(`nothing found`);
-	}
-}
+app.listen(PORT, () => console.log(`listening on ${PORT}`));

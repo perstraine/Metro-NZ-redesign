@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+#container{
+    display: flex;
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+#left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#sectionTitle{
+    width: 90%;
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--metro-red);
+    letter-spacing: 0.07em;
+    padding: 30px 0 20px;
+}
+
+#title{
+    width: 90%;
+    font-weight: 900;
+    font-size: 44px;
+    color: #1B1717;
+    letter-spacing: 0.07em;
+    padding-bottom: 30px;
+}
+
+#content{
+    color: #6E6E6E;
+    width: 90%;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#innerContainer{
+    border: 1px solid #DADADA;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.35s ease-in-out;
+}
+
+#innerContainerhidden{
+    border: 1px solid #DADADA;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.35s ease-in-out;
+    opacity: 0;
+}
+
+#rating{
+    width:92%;
+    display: flex;
+    padding: 30px 0;
+}
+
+.stars{
+    padding: 0 15px 0 0;
+}
+#comment{
+    color: #6E6E6E;
+    width:92%;
+    font-weight: 400;
+font-size: 22px;
+height: 150px;
+}
+#person{
+    width:92%;
+    display: flex;
+    padding-bottom: 25px;
+}
+#testim{
+    border-radius: 50%;
+    
+}
+#details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 12px;
+}
+#name{
+    font-weight: 900;
+font-size: 22px;
+letter-spacing: 0.07em;
+color: #1B1717;
+}
+#occupation{
+    font-weight: 600;
+font-size: 18px;
+letter-spacing: 0.1em;
+color: var(--metro-red);
+}
+
+#circleContainer{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+}
+
+.circleActive{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #ADABAB;
+}
+
+.circle{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}

@@ -11,6 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+>>>>>>> origin/listing
     "express": "^4.18.1",
     "mongodb": "^4.10.0"
   }

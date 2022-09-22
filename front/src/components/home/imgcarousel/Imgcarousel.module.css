@@ -1,0 +1,29 @@
+#container{
+  padding-top: 80px;
+}
+
+
+.list {
+  display: flex;
+  list-style: none;
+  height: 300px;
+  overflow-x: hidden;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+
+.items {
+  flex: 0 0 400px;
+  /* background: grey; */
+  margin: 0 20px 0 0;
+  user-select: none;
+}
+
+.items:last-of-type {
+  margin: 0;
+}
+
+.carIMG{
+  width: 100%;
+}
