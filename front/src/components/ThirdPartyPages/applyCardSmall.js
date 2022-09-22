@@ -11,20 +11,22 @@ export default function ApplyCardSmall({ images, details }) {
 			</div>
 			<div className={styles.innerCardContainer}>
 				<div className={styles.contentContainer}>
-					<div className={styles.address}>102 WIND DRIVE PARNELL</div>
-					<div className={styles.price}>$345 Per Week</div>
+					<div className={styles.address}>{`${
+						details.address.number
+					} ${details.address.street.toUpperCase()} ${details.address.suburb.toUpperCase()}`}</div>
+					<div className={styles.price}>{`$${details.price["$numberDecimal"]} Per Week`}</div>
 					<div className={styles.outterIconContainer}>
 						<div className={styles.iconContainer}>
 							<img src={Bed} alt="" />
-							<div>3</div>
+							<div>{`${details.bedrooms}`}</div>
 						</div>
 						<div className={styles.iconContainer}>
 							<img src={Shower} alt="" />
-							<div>2</div>
+							<div>{`${details.bathrooms}`}</div>
 						</div>
 						<div className={styles.iconContainer}>
 							<img src={Car} alt="" />
-							<div>1</div>
+							<div>{`${details.parking}`}</div>
 						</div>
 					</div>
 				</div>

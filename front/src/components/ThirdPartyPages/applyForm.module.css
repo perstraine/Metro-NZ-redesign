@@ -81,6 +81,7 @@
 	font-size: 1.1rem;
 	font-weight: 400;
 	color: var(--metro-grey);
+	cursor: pointer;
 }
 
 .noButton {
@@ -92,6 +93,7 @@
 	font-size: 1.1rem;
 	font-weight: 400;
 	color: var(--metro-grey);
+	cursor: pointer;
 }
 
 .nextButton {
@@ -107,4 +109,5 @@
 	border-radius: 5px;
 	background-color: var(--metro-red);
 	border: none;
+	cursor: pointer;
 }

@@ -7,8 +7,8 @@ export default function ConfirmCard({ images, details }) {
 	return (
 		<div className={styles.mainContainer}>
 			<div className={styles.innerContainer}>
-				<div>
-					<img src={images[0]} alt="" />
+				<div className={styles.imgContainer}>
+					<img className={styles.confirmImg} src={images[0]} alt="" />
 				</div>
 				<div className={styles.descContainer}>
 					<div className={styles.addressContainer}>
@@ -38,7 +38,9 @@ export default function ConfirmCard({ images, details }) {
 					</div>
 					<div className={styles.buttonContainer}>
 						<div className={styles.buttonInnerContainer}>
-							<button>APPLY</button>
+							<a href="/apply/04">
+								<button>APPLY</button>
+							</a>
 						</div>
 					</div>
 				</div>

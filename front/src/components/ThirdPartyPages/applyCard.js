@@ -36,7 +36,7 @@ export default function ApplyCard() {
 	return (
 		<div className={styles.mainContainer}>
 			<div className={styles.outterContainer}>
-				<ApplyCardSmall images={images} details={details} />
+				{result && <ApplyCardSmall images={images} details={details} />}
 				<ApplyForm />
 			</div>
 		</div>
