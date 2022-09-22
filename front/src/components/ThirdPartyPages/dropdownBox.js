@@ -1,13 +1,24 @@
 import styles from "./dropdownBox.module.css";
-import Arrow from "./assets/down_arrow.png";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function DropdownBox() {
-	const Addresses = [
-		{ value: "Address 01" },
-		{ value: "Address 02" },
-		{ value: "Address 03" },
-		{ value: "Address 04" },
-	];
+	const [details, setDetails] = useState([]);
+	const [result, setResult] = useState(false);
+	useEffect(() => {
+		result
+			? console.log("test")
+			: axios.post("http://localhost:4000/get-listing").then((res) => {
+					console.log("details", res.data);
+					if (res.data === "failed") {
+						setResult(false);
+					} else {
+						setDetails(res.data);
+						setResult(true);
+					}
+			  });
+	}, [result]);
+
 	return (
 		<div className={styles.mainContainer}>
 			<div className={styles.innerContainer}>
@@ -19,9 +30,14 @@ export default function DropdownBox() {
 						<option value="" selected disabled hidden>
 							Select METRO NZ property
 						</option>
-						{Addresses.map((address) => (
-							<option value={address.value}>{address.value}</option>
-						))}
+						{details.length > 0 &&
+							details.map((house) => {
+								return (
+									<option
+										value={`${house.address.number} ${house.address.street}, ${house.address.suburb}, ${house.address.city}`}
+									>{`${house.address.number} ${house.address.street}, ${house.address.suburb}, ${house.address.city}`}</option>
+								);
+							})}
 					</select>
 				</div>
 			</div>

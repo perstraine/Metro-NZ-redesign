@@ -8,10 +8,12 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const { searchRouter } = require("./routes/search.routes");
-const { listingRouter } = require('./routes/listing.routes')
+const { listingRouter } = require("./routes/listing.routes");
+const { findListingRouter } = require("./routes/findListing.routes");
 const PORT = 4000;
 
 app.use(searchRouter);
-app.use(listingRouter)
+app.use(listingRouter);
+app.use(findListingRouter);
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));

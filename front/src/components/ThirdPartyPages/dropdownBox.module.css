@@ -1,6 +1,8 @@
 .mainContainer {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 .innerContainer {
@@ -8,6 +10,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 
 .dropdowBoxText {
@@ -18,7 +21,10 @@
 }
 
 .dropdownContainer {
-	padding: 3rem 0 20rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3rem 0rem 20rem 1.5rem;
 }
 
 .selectDropdown {
@@ -28,7 +34,7 @@
 	background-position: calc(100% - 1em) center;
 	background-size: 1.5em;
 	background-color: white;
-	width: 38vw;
+	width: 37vw;
 	height: 7.75vh;
 	font-size: 1.13rem;
 	border-radius: 10px;

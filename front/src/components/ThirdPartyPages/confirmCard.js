@@ -1,21 +1,22 @@
 import styles from "./confirmCard.module.css";
-import ApartmentImg from "./assets/apartment_card_placeholder.png";
 import Bed from "./assets/bed.png";
 import Shower from "./assets/shower.png";
 import Car from "./assets/car.png";
 
-export default function ConfirmCard() {
+export default function ConfirmCard({ images, details }) {
 	return (
 		<div className={styles.mainContainer}>
 			<div className={styles.innerContainer}>
 				<div>
-					<img src={ApartmentImg} alt="" />
+					<img src={images[0]} alt="" />
 				</div>
 				<div className={styles.descContainer}>
 					<div className={styles.addressContainer}>
 						<div className={styles.addressPrice}>
-							<div>25 ENFIELD STREET MOUNT EDEN</div>
-							<div>$780 Per Week</div>
+							<div>{`${
+								details.address.number
+							} ${details.address.street.toUpperCase()} ${details.address.suburb.toUpperCase()}`}</div>
+							<div>{`$${details.price["$numberDecimal"]} Per Week`}</div>
 						</div>
 					</div>
 
@@ -23,15 +24,15 @@ export default function ConfirmCard() {
 						<div className={styles.iconsInnerContainer}>
 							<div className={styles.iconContainer}>
 								<img src={Bed} alt="" />
-								<div>2</div>
+								<div>{`${details.bedrooms}`}</div>
 							</div>
 							<div className={styles.iconContainer}>
 								<img src={Shower} alt="" />
-								<div>2</div>
+								<div>{`${details.bathrooms}`}</div>
 							</div>
 							<div className={styles.iconContainer}>
 								<img src={Car} alt="" />
-								<div>2</div>
+								<div>{`${details.parking}`}</div>
 							</div>
 						</div>
 					</div>

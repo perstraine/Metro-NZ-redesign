@@ -44,7 +44,7 @@ export default function Services() {
 					</div>
 					{/* card 3 */}
 					<div className={styles.cards}>
-						<a href="/">
+						<a href="/search">
 							<div>
 								<img className={styles.iconCards} src={homeIcon} alt="" />
 							</div>
