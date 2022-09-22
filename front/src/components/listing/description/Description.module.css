@@ -1,0 +1,187 @@
+#outerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-family: 'Poppins';
+}
+
+#innerContainer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left, #right{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#addiDetails{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-weight: 400;
+font-size: 18px;
+letter-spacing: 0.1em;
+padding: 40px 0;
+}
+
+.details{
+    padding-top: 40px;
+    display: flex;
+    width: 100%;
+    border-bottom: solid 2px #c4c4c4;
+}
+
+.detSection{
+    width: 50%;
+}
+
+#desc{
+    padding-top: 60px;
+    font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 0.1em;
+}
+
+#first{
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+#buttonHolder{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+}
+
+#button{
+    font-weight: 600;
+font-size: 18px;
+text-align: center;
+letter-spacing: 0.1em;
+color: white;
+background-color: #C45648;
+border-radius: 5px;
+padding: 25px 60px;
+}
+
+#propManager{
+    padding: 35px 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#questions{
+    width:100%;
+    text-align: center;
+    font-weight: 400;
+font-size: 22px;
+letter-spacing: 0.1em;
+}
+
+#propdets{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#imageHolder{
+    width: 10%;
+}
+
+#image{
+    border-radius: 50%;
+}
+
+#stuff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+#title{
+    font-weight: 400;
+font-size: 20px;
+letter-spacing: 0.1em;
+}
+
+#name{
+    font-weight: 700;
+font-size: 20px;
+letter-spacing: 0.1em;
+}
+
+#propcontact{
+    padding-top: 20px;
+    display:flex;
+    justify-content: center ;
+    font-weight: 400;
+font-size: 18px;
+letter-spacing: 0.1em;
+}
+
+#phone, #email{
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+}
+
+#emailimg{
+    width: 32px;
+    height: 25px;
+}
+
+#phoneimg{
+    width: 32px;
+    height: 35px;
+}
+
+#mapHolder{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    padding: 80px 0;
+    
+}
+
+#map{
+    width: 70%;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#share{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#shareTitle{
+    font-weight: 700;
+font-size: 24px;
+letter-spacing: 0.1em;
+padding: 15px 0;
+}
+
+.shareinfo{
+    font-weight: 400;
+font-size: 20px;
+letter-spacing: 0.1em;
+border-bottom: 2px solid #C4C4C4;
+padding: 15px 0;
+}
+
+.small{
+    padding-right: 10px;
+}

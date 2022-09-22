@@ -5,7 +5,6 @@ import parking from "./assets/parking.png";
 
 
 export default function Details({ details }) {
-    console.log(details);
     return (
       <div id={styles.container}>
         <div id={styles.address}>
