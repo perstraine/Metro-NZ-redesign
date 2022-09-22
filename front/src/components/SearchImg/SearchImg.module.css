@@ -11,12 +11,8 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
-  /* height: 300px; */
 }
 
-/* .searchImg img {
-  position: relative;
-} */
 
 .searchImg h1 {
   position: absolute;

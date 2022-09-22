@@ -1,0 +1,41 @@
+@import "../../variables.css";
+
+.cantFindBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--metro-grey);
+  margin: 30px;
+}
+
+.bannerContainer {
+  padding: 60px 150px;
+  margin: 20px;
+  box-shadow: 1px 4px 7px rgba(128, 128, 128, 0.449);
+}
+
+.bannerContainer h5 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contact img {
+  margin-right: 6px;
+}
+
+.contact span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}

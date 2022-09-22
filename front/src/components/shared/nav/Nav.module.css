@@ -6,7 +6,7 @@
   justify-content: flex-end;
   align-items: center;
   font-weight: 800;
-  font-size: 0.9rem;
+  font-size: 17px;
   padding: 0 30px;
 }
 
@@ -51,7 +51,7 @@
 .navColTwo p {
   color: var(--metro-grey);
   margin: 0 20px;
-  font-size: 0.9rem;
+  font-size: 17px;
   font-weight: 500;
   display: flex;
   align-items: center;

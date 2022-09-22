@@ -15,7 +15,7 @@
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 900;
   margin: 20px 0 10px;
 }
@@ -49,7 +49,7 @@ a {
   flex-direction: row;
   border-top: 1px solid #ffffff40;
   font-weight: 800;
-  font-size: 0.8rem;
+  font-size: 14px;
   padding: 15px 0px;
   margin-top: 50px;
 }

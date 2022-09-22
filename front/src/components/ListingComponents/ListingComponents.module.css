@@ -1,7 +1,6 @@
 @import "../../variables.css";
 
 .propertyListingCard {
-  /* position: relative; */
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -11,7 +10,6 @@
   position: relative;
   width: 380px;
   height: 380px;
-  /* margin: 50px 50px 200px; */
 }
 
 .image {
@@ -19,10 +17,8 @@
   height: 380px;
   background-position: center;
   background-repeat: no-repeat;
-  /* position: absolute; */
   background-size: cover;
   top: 0;
-  /* left: 0; */
 }
 
 .infoCard {
@@ -37,7 +33,6 @@
   width: 310px;
   top: 0;
   padding: 25px;
-  /* margin: 300px 0;/ */
   transform: translateY(300px);
   box-shadow: 1px 5px 5px #6e6e6e6b;
   box-sizing: border-box;
@@ -47,24 +42,17 @@
 .icons {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-evenly; */
   align-items: center;
-  /* border: 2px solid pink; */
   width: 100%;
-
-  /* margin-left: -5px; */
 }
 
 .icons span {
   display: flex;
-
-  /* border: 2px solid green; */
   margin-right: 20px;
 }
 
 .icons span img {
   margin: 0 6px;
-  /* border: 2px solid green; */
   width: 35px;
 }
 
@@ -72,7 +60,6 @@
   margin: 0;
   font-size: 30px;
   font-weight: 700;
-  /* border: 2px solid green; */
 }
 
 .price {
@@ -85,7 +72,6 @@
 }
 
 .listingTitle {
-  /* border: 2px solid blue; */
   font-size: 25px;
   font-weight: 900;
   margin: 0;
@@ -93,7 +79,6 @@
 
 .buttonAndInfo {
   display: flex;
-  /* border: 2px solid black; */
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -107,10 +92,8 @@
 }
 
 .buttonAndInfo p {
-  /* border: 2px solid black; */
   display: flex;
   text-decoration: solid var(--metro-grey);
-  /* text-decoration: 1px solid black; */
   text-transform: none;
   color: var(--metro-grey);
   cursor: pointer;
@@ -128,7 +111,6 @@
 }
 
 .buttonAndInfo img {
-  /* width: 3px; */
   height: 10px;
   margin: 0 0 -1px 5px;
 }

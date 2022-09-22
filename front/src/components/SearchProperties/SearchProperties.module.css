@@ -2,7 +2,6 @@
 
 .searchProperties {
   background-color: var(--metro-black);
-  /* height: 500px; */
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -16,15 +15,12 @@
 }
 
 form select {
-  /* padding-right: 20px; */
   color: var(--metro-grey);
-  /* margin: px; */
 }
 
 form label {
   font-size: 1.5rem;
   font-weight: 600;
-  /* margin: 2px 0; */
 }
 
 select,
@@ -37,7 +33,6 @@ input {
 
 .rowOne,
 .rowTwo {
-  /* margin: 1px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -48,9 +43,6 @@ input {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* border: 2px solid pink; */
 }
 
 #petsAndAvail {
@@ -66,13 +58,11 @@ input {
   margin: 0px 20px;
 
   align-self: flex-end;
-  margin-top: 18px;
+  margin-top: 30px;
 }
 
 .dash {
-  /* display: none; */
-  align-self: flex-end;
-  margin-bottom: 12px;
+  color: white;
 }
 
 form button {
@@ -81,7 +71,7 @@ form button {
   border-radius: 5px;
   padding: 15px 30px;
   align-self: flex-end;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
   color: #ffffff;
   font-weight: 600;
   font-size: 1.2rem;
@@ -106,16 +96,14 @@ form button {
 }
 
 #maxRent {
-  margin-left: -120px;
+  transform: translateX(-120px);
 }
 
 #budget {
   display: flex;
   flex-direction: column;
   flex-direction: row;
-  /* display: none; */
   margin: 0;
-  /* border: 2px solid black; */
 }
 
 #budget span {

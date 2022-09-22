@@ -7,7 +7,6 @@ export default function SearchImg() {
   return (
     <>
       <div className={style.searchImg}>
-        {/* <img src={Img} alt="" /> */}
         <h1>What METRO NZ properties are you interested in?</h1>
         <img src={ManImg} alt="" />
       </div>

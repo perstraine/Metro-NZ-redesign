@@ -11,53 +11,11 @@ import {
 } from "./SearchOptions";
 import { useState, useEffect } from "react";
 
-export default function SearchProperties() {
-  let newObj = {};
-
-  const handleSearch = async (e) => {
-    e.preventDefault();
-    const data = new FormData(e.target);
-    const formObject = Object.fromEntries(data.entries());
-
-    newObj = {
-      ...(formObject.suburb !== "All" && {
-        "address.suburb": formObject.suburb.toLowerCase(),
-      }),
-      ...(formObject.propertyType !== "All" && {
-        "property type": formObject.propertyType.toLowerCase(),
-      }),
-      ...(formObject.pets === "true" && {
-        pets: true,
-      }),
-      bedrooms: `{$gte: ${parseInt(formObject.bedrooms)}}`,
-      //   ...(formObject.bedrooms !== "Any" && {
-      // bedrooms: parseInt(formObject.bedrooms),
-      // }),
-      // ...(formObject.bathrooms !== "Any" && {
-      //   bathrooms: parseInt(formObject.bathrooms),
-      // }),
-      // ...(formObject.minRent === "Any" &&
-      //   formObject.maxRent !== "Any" && {
-      //     "price.$numberDecimal": `{ $lte: ${parseInt(formObject.maxRent)}`,
-      //   }),
-    };
-    await searchForProperties(newObj);
-  };
-
-  const searchForProperties = async (searchObj) => {
-    // e.preventDefault();
-    // console.log(formObject);
-    const response = await axios.post(
-      "http://localhost:4000/search/results",
-      searchObj
-    );
-    console.log("hii", response);
-  };
-
+export default function SearchProperties({ onSubmit }) {
   return (
     <>
       <div className={styles.searchProperties}>
-        <form action="" onSubmit={handleSearch}>
+        <form action="" onSubmit={onSubmit}>
           <section className={styles.rowOne}>
             <span>
               <label htmlFor="suburb">Select Suburb</label>
@@ -84,9 +42,7 @@ export default function SearchProperties() {
                   })}
                 </select>
               </span>
-              {/* <span className={styles.dash}>-</span> */}
               <span>
-                {/* <label htmlFor="budget">hello</label> */}
                 <select name="maxRent" id={styles.maxRent}>
                   {maxRent.map((amount) => {
                     return <option value={amount}>{amount}</option>;

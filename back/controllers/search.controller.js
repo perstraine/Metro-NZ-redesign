@@ -1,18 +1,7 @@
 const { MongoClient } = require("mongodb");
 
 const searchListings = async (req, res) => {
-  const {
-    suburb,
-    propertyType,
-    bedrooms,
-    bathrooms,
-    minRent,
-    maxRent,
-    pets,
-    availableNow,
-  } = req.body;
   const query = req.body;
-
   console.log(req.body);
   async function main() {
     const uri =
@@ -28,7 +17,6 @@ const searchListings = async (req, res) => {
     }
   }
   async function search(client) {
-    // console.log(bedrooms);
     const result = await client
       .db("mission6b")
       .collection("metroNZ")
@@ -36,7 +24,7 @@ const searchListings = async (req, res) => {
       .toArray();
     if (result) {
       res.send(result);
-      //   console.log(result);
+      console.log(result);
     } else {
       console.log(`no listings found`);
     }
