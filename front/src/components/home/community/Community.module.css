@@ -1,0 +1,87 @@
+#container {
+  width: 100%;
+  display: flex;
+  padding: 100px 0 50px;
+  font-family: "Poppins";
+}
+
+#left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#leftContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16%;
+}
+
+#sectionTitle {
+  font-weight: 900;
+  font-size: 22px;
+  color: #c45648;
+  letter-spacing: 0.07em;
+  padding: 120px 0 20px;
+}
+
+#title {
+  font-weight: 900;
+  font-size: 46px;
+  letter-spacing: 0.07em;
+  width: 80%;
+  padding-bottom: 30px;
+}
+
+#content {
+  font-weight: 400;
+  font-size: 20px;
+  color: #6e6e6e;
+  padding-bottom: 50px;
+}
+
+#button{
+    font-weight: 600;
+font-size: 16px;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+background-color: #c45648;
+border-radius: 4px;
+width: fit-content;
+padding: 25px 50px;
+}
+
+#right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.image {
+  width: 520px;
+  height: 350px;
+
+  background-size: contain;
+}
+
+#image1 {
+  z-index: 0;
+  background-image: url("./assets/img1.png");
+  margin: 0 160px 0 0;
+}
+
+#image2 {
+  z-index: 1;
+  background-image: url("./assets/img2.png");
+  margin: -164px 266px 0 0;
+}
+
+#image3 {
+  z-index: 2;
+  background-image: url("./assets/img3.png");
+  border: #c5c5c5 thin 1px;
+  margin: -138px 162px 0 0;
+}

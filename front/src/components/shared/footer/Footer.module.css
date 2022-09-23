@@ -35,6 +35,10 @@ a {
   margin-right: auto;
 }
 
+.footerCol:first-of-type img {
+  cursor: pointer;
+}
+
 .footerCol span {
   display: flex;
   flex-direction: row;
@@ -70,7 +74,6 @@ a {
 }
 
 .bottom section :not(:first-of-type) {
-  /* margin-right: auto; */
-  /* border: 2px solid blue; */
+  cursor: pointer;
   margin-left: 20px;
 }

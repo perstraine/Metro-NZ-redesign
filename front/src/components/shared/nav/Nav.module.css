@@ -17,6 +17,7 @@
 .navColOne :not(:first-child) {
   background-color: #ffffff;
   color: var(--metro-red);
+  cursor: pointer;
 }
 
 .navColOne span {
@@ -41,6 +42,7 @@
 
 .navColTwo img:first-of-type {
   margin-right: auto;
+  cursor: pointer;
 }
 
 .navColTwo p img:nth-of-type(1) {
@@ -55,6 +57,7 @@
   font-weight: 500;
   display: flex;
   align-items: center;
+  transition: 0.25s color ease-in-out;
 }
 
 .navColTwo p:hover {
@@ -68,12 +71,12 @@
   width: 185px;
   background-color: #ffffff;
   padding: 10px 0;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  visibility: hidden;
+  z-index: 10;
 }
 
 .active {
-  opacity: 1;
+  visibility: visible;
 }
 
 .dropdown p {

@@ -1,0 +1,12 @@
+.footerContainer {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: auto;
+}
+
+.footerText {
+	text-align: center;
+	width: 34vw;
+	height: 7.5vh;
+}
