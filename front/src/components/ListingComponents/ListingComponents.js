@@ -5,6 +5,7 @@ import BathroomIcon from "./assets/bathroom-icon.svg";
 import CarIcon from "./assets/car-icon.svg";
 import RightArrow from "./assets/right-arrow.png";
 import MetroLogo from "./assets/metro-logo.png";
+import { Link } from "react-router-dom";
 
 export default function ListingComponents({ listing }) {
   return (
@@ -43,7 +44,9 @@ export default function ListingComponents({ listing }) {
           <span className={styles.buttonAndInfo}>
             <button>APPLY</button>
             <section>
-              <p>More Info</p>
+              <p>
+                <Link to={`/listing/${listing.houseId}`}>More Info</Link>
+              </p>
               <img src={RightArrow} alt="" />
             </section>
           </span>
