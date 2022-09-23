@@ -1,0 +1,121 @@
+@import "../../variables.css";
+
+.propertyListingCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 200px;
+  height: 200px;
+  margin: 0px;
+  position: relative;
+  width: 380px;
+  height: 380px;
+}
+
+.image {
+  width: 380px;
+  height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+  background-color: #ffffff;
+  position: absolute;
+  height: 310px;
+  width: 310px;
+  top: 0;
+  padding: 25px;
+  transform: translateY(300px);
+  box-shadow: 1px 5px 5px #6e6e6e6b;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.icons span {
+  display: flex;
+  margin-right: 20px;
+}
+
+.icons span img {
+  margin: 0 6px;
+  width: 35px;
+}
+
+.icons span p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.price {
+  margin: 0;
+}
+
+.price p {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.listingTitle {
+  font-size: 25px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.buttonAndInfo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7px 0;
+}
+
+.buttonAndInfo section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonAndInfo p {
+  display: flex;
+  text-decoration: solid var(--metro-grey);
+  text-transform: none;
+  color: var(--metro-grey);
+  cursor: pointer;
+}
+
+.buttonAndInfo button {
+  padding: 18px 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--metro-red);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.buttonAndInfo img {
+  height: 10px;
+  margin: 0 0 -1px 5px;
+}
+
+.metroLogo {
+  position: absolute;
+  top: 10px;
+}

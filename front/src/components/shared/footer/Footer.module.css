@@ -15,7 +15,7 @@
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 900;
   margin: 20px 0 10px;
 }
@@ -35,6 +35,10 @@ a {
   margin-right: auto;
 }
 
+.footerCol:first-of-type img {
+  cursor: pointer;
+}
+
 .footerCol span {
   display: flex;
   flex-direction: row;
@@ -49,7 +53,7 @@ a {
   flex-direction: row;
   border-top: 1px solid #ffffff40;
   font-weight: 800;
-  font-size: 0.8rem;
+  font-size: 14px;
   padding: 15px 0px;
   margin-top: 50px;
 }
@@ -70,7 +74,6 @@ a {
 }
 
 .bottom section :not(:first-of-type) {
-  /* margin-right: auto; */
-  /* border: 2px solid blue; */
+  cursor: pointer;
   margin-left: 20px;
 }

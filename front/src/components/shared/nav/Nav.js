@@ -3,6 +3,7 @@ import styles from "./Nav.module.css";
 import Logo from "./assets/metro-logo.png";
 import DownArrow from "./assets/down-arrow.svg";
 import MagGlass from "./assets/mag-glass.svg";
+import { useNavigate } from "react-router-dom";
 
 export default function Nav() {
   const showDropdown = () => {
@@ -14,6 +15,9 @@ export default function Nav() {
     const dropdown = document.querySelector("#dropdown");
     dropdown.classList.remove(styles["active"]);
   };
+
+  const navigate = useNavigate();
+
   return (
     <>
       <div className={styles.nav}>
@@ -23,7 +27,7 @@ export default function Nav() {
           <span>CHANGE TO METRO NZ</span>
         </div>
         <div className={styles.navColTwo}>
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="" onClick={() => navigate("/")} />
           <span>
             <p onClick={showDropdown}>
               Management Services <img src={DownArrow} alt="" />

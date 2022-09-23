@@ -1,14 +1,10 @@
 import React from "react";
 import styles from "./NewsletterSignup.module.css";
-import ArrowUp from "./assets/arrow-up.svg";
+import BackToTop from "../BackToTop/BackToTop";
 
 export default function NewsletterSignup() {
   const handleSubmit = (e) => {
     e.preventDefault();
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
   return (
@@ -24,9 +20,7 @@ export default function NewsletterSignup() {
           <input type="email" placeholder="Your email here" />
           <button>SEND NOW</button>
         </form>
-        <p onClick={scrollToTop}>
-          Back to top <img src={ArrowUp} alt="" />{" "}
-        </p>
+        <BackToTop />
       </div>
     </>
   );

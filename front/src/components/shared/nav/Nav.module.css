@@ -6,7 +6,7 @@
   justify-content: flex-end;
   align-items: center;
   font-weight: 800;
-  font-size: 0.9rem;
+  font-size: 17px;
   padding: 0 30px;
 }
 
@@ -17,6 +17,7 @@
 .navColOne :not(:first-child) {
   background-color: #ffffff;
   color: var(--metro-red);
+  cursor: pointer;
 }
 
 .navColOne span {
@@ -38,8 +39,10 @@
   align-items: center;
   position: relative;
 }
+
 .navColTwo img:first-of-type {
   margin-right: auto;
+  cursor: pointer;
 }
 
 .navColTwo p img:nth-of-type(1) {
@@ -50,9 +53,16 @@
 .navColTwo p {
   color: var(--metro-grey);
   margin: 0 20px;
-  font-size: 0.9rem;
+  font-size: 17px;
+  font-weight: 500;
   display: flex;
   align-items: center;
+  transition: 0.25s color ease-in-out;
+}
+
+.navColTwo p:hover {
+  color: var(--metro-red);
+  cursor: pointer;
 }
 
 .dropdown {
@@ -61,12 +71,12 @@
   width: 185px;
   background-color: #ffffff;
   padding: 10px 0;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  visibility: hidden;
+  z-index: 10;
 }
 
 .active {
-  opacity: 1;
+  visibility: visible;
 }
 
 .dropdown p {
