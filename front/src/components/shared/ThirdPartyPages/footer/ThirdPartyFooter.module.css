@@ -1,12 +1,25 @@
 .footerContainer {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 100vw;
-	height: auto;
+	height: 14.2vh;
+	box-shadow: 4px 0 4px 0 #00000040;
 }
 
 .footerText {
 	text-align: center;
 	width: 34vw;
 	height: 7.5vh;
+	font-size: 0.94em;
+	font-weight: 600;
+	line-height: 2.5em;
+}
+
+.linkText {
+	color: var(--metro-red);
+}
+
+.clickHere {
+	color: #459eff;
 }

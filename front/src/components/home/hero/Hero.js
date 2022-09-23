@@ -6,10 +6,12 @@ export default function Hero() {
 
 	const Suburbs = [
 		{ value: "Any" },
-		{ value: "Johnsonville" },
-		{ value: "Karori" },
-		{ value: "Newlands" },
-		{ value: "Te Aro" },
+		{ value: "Ponsonby" },
+		{ value: "Newmarket" },
+		{ value: "Epsom" },
+		{ value: "Parnell" },
+		{ value: "Balmoral" },
+		{ value: "Mission Bay" },
 	];
 
 	const houseType = [{ value: "Any" }, { value: "House" }, { value: "Apartment" }, { value: "Townhouse" }];
@@ -20,8 +22,7 @@ export default function Hero() {
 		{ value: "2" },
 		{ value: "3" },
 		{ value: "4" },
-		{ value: "5" },
-		{ value: "6" },
+		{ value: "5+" },
 	];
 
 	const Regions = [
@@ -126,7 +127,9 @@ export default function Hero() {
 							</div>
 						</div>
 						<div className={styles.buttonContainer}>
-							<button className={styles.searchButton}>Search</button>
+							<a href="/listings">
+								<button className={styles.searchButton}>Search</button>
+							</a>
 						</div>
 					</div>
 				</div>

@@ -1,4 +1,4 @@
-@import "../../variables.css";
+@import "../../../variables.css";
 
 /* hero background section */
 
@@ -159,6 +159,7 @@
 	font-size: 1.3rem;
 	font-weight: 400;
 	color: #64626a;
+	cursor: pointer;
 }
 
 .dropdownHeading {
@@ -181,6 +182,7 @@
 	height: 5.5vh;
 	font-size: 1rem;
 	font-weight: 600;
+	cursor: pointer;
 }
 
 /* find a property manager section */

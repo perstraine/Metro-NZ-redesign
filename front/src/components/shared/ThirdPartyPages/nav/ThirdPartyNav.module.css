@@ -6,3 +6,16 @@
 	height: 15vh;
 	box-shadow: 0 4px 4px 0 #00000040;
 }
+
+.backArrow {
+	display: flex;
+	align-items: center;
+	font-size: 1.25em;
+	color: #6e6e6e;
+	font-weight: 500;
+	padding: 2em 0 2em 2em;
+}
+
+.backArrow img {
+	padding-right: 0.5em;
+}
