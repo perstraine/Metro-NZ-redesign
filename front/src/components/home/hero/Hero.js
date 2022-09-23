@@ -127,7 +127,7 @@ export default function Hero() {
 							</div>
 						</div>
 						<div className={styles.buttonContainer}>
-							<a href="/search">
+							<a href="/listings">
 								<button className={styles.searchButton}>Search</button>
 							</a>
 						</div>
