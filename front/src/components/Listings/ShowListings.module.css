@@ -1,0 +1,86 @@
+.showListings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0 20px;
+}
+
+.listingsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1500px;
+  flex-direction: row;
+  padding-top: 0;
+  margin-top: 30px;
+}
+
+.showListings > section {
+  display: flex;
+  width: 1250px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: -30px;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.headings > h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.headings h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.mapView {
+  color: var(--metro-grey);
+  border: 1px solid black;
+  height: 60px;
+  text-align: center;
+  width: 180px;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.mapView img {
+  margin-left: 6px;
+}
+
+.showListings select {
+  border: 1px solid black;
+  border-radius: 0;
+  height: 60px;
+  width: 280px;
+  box-sizing: border-box;
+  color: var(--metro-grey);
+}
+
+.noOfListings {
+  margin-right: auto;
+  color: var(--metro-grey);
+}
+
+.listingCard {
+  margin: 10px;
+  padding: 40px 20px 0px;
+  height: 680px;
+  display: flex;
+  justify-content: center;
+}
