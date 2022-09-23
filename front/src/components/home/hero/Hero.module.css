@@ -1,0 +1,233 @@
+@import "../../../variables.css";
+
+/* hero background section */
+
+.heroBackground {
+	display: flex;
+	background-image: url(./assets/hero_background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.heroContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	color: white;
+}
+
+.heroInner {
+	width: 60vw;
+	text-align: center;
+}
+
+.heroInner h1 {
+	font-size: 5rem;
+	font-weight: 900;
+}
+
+.heroInner p {
+	font-size: 4rem;
+	font-weight: 500;
+}
+
+/* hero search headings */
+.mainContainer {
+	margin: -8vh 0 15vh 0;
+}
+
+.searchContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.searchHeader {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 84vw;
+	height: 10vh;
+}
+
+.searchContainerLeft {
+	background-color: var(--metro-red);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	height: 10vh;
+	cursor: pointer;
+}
+
+.searchContainerLeftInactive {
+	background-color: var(--metro-black);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	height: 10vh;
+	cursor: pointer;
+}
+
+.searchContainerRight {
+	background-color: var(--metro-red);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	height: 10vh;
+	cursor: pointer;
+}
+
+.searchContainerRightInactive {
+	background-color: var(--metro-black);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 50%;
+	height: 10vh;
+	cursor: pointer;
+}
+
+.bottomBorderLeftInactive,
+.bottomBorderLeft,
+.bottomBorderRight {
+	border-bottom: 4px solid var(--metro-red);
+	width: 8.875rem;
+}
+
+.bottomBorderRightInactive {
+	border-bottom: 4px solid var(--metro-black);
+}
+
+/* Find a rental property section */
+
+.searchBoxOutterContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.searchBoxOutterContainerInactive {
+	display: none;
+}
+
+.searchBoxInnerContainer {
+	display: flex;
+	width: 84vw;
+	height: 26vh;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--metro-black);
+}
+
+.dropdownBoxContainer {
+	display: flex;
+	justify-content: space-around;
+	width: 70vw;
+	background-color: var(--metro-black);
+}
+
+.dropdownBox {
+	display: flex;
+	flex-direction: column;
+}
+
+/* replaces standard arrow*/
+
+.arrow {
+	appearance: none;
+	background-image: url(../hero/assets/grey_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: calc(100% - 1em) center;
+	background-size: 1.5em;
+	background-color: white;
+	width: 17vw;
+	height: 7.3vh;
+	border-radius: 5px;
+	padding-left: 1.5rem;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: #64626a;
+	cursor: pointer;
+}
+
+.dropdownHeading {
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 1rem;
+}
+
+.buttonContainer {
+	padding-top: 4rem;
+}
+
+.searchButton {
+	color: white;
+	background-color: var(--metro-red);
+	border: none;
+	border-radius: 5px;
+	width: 6.7vw;
+	height: 5.5vh;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+/* find a property manager section */
+
+.propManagerOutterContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.propManagerOutterContainerInactive {
+	display: none;
+}
+
+.propManagerInnerContainer {
+	display: flex;
+	width: 84vw;
+	height: 26vh;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--metro-black);
+}
+
+.proManagerSearch {
+	display: flex;
+	justify-content: space-evenly;
+	width: 70vw;
+	background-color: var(--metro-black);
+}
+
+.arrowPropManager {
+	appearance: none;
+	background-image: url(./assets/grey_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: calc(100% - 1em) center;
+	background-size: 1.5em;
+	background-color: white;
+	width: 25vw;
+	height: 7.3vh;
+	border-radius: 5px;
+	padding-left: 1.5rem;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: #64626a;
+}
+
+.buttonContainerPropManager {
+	padding: 4rem 8rem 0 0;
+}

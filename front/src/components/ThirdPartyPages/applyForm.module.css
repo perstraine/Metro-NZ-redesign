@@ -1,0 +1,113 @@
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	width: max-content;
+	height: 69.7vh;
+	box-shadow: 0 4px 4px 0 #00000040;
+	/* border: 1px solid black; */
+}
+
+.header {
+	width: 30vw;
+	height: 7.5vh;
+	font-size: 1.875rem;
+	font-weight: 600;
+	padding: 1rem 0 0 1rem;
+	color: white;
+	background-color: var(--metro-black);
+}
+
+.date {
+	width: 26vw;
+	height: 7vh;
+	padding-left: 1rem;
+	border-radius: 5px;
+	border: 1px solid var(--metro-red);
+	color: var(--metro-grey);
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+.innerFormContainer {
+	padding: 0 0 0 2.4rem;
+}
+
+.optionText {
+	color: var(--metro-grey);
+	font-size: 1.1rem;
+	font-weight: 400;
+	padding-left: 1rem;
+}
+
+.innerFormContainer label {
+	font-size: 1.13rem;
+	font-weight: 600;
+	line-height: 2.5rem;
+	color: var(--metro-black);
+}
+
+.innerFormContainer select {
+	width: 27vw;
+	height: 7vh;
+	margin-top: 0.5rem;
+	border-radius: 5px;
+	border: 1px solid var(--metro-red);
+	appearance: none;
+	background-image: url(./assets/down_arrow.png);
+	background-repeat: no-repeat;
+	background-position: calc(100% - 1em) center;
+	background-size: 1.5em;
+	background-color: white;
+}
+
+.formContainer span {
+	color: red;
+}
+
+.submitForm {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 27vw;
+	padding-top: 1rem;
+}
+
+.yesButton {
+	width: 5rem;
+	height: 3rem;
+	border: 1px solid var(--metro-red);
+	border-radius: 5px 0 0 5px;
+	background-color: transparent;
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: var(--metro-grey);
+	cursor: pointer;
+}
+
+.noButton {
+	width: 5rem;
+	height: 3rem;
+	border: 1px solid var(--metro-red);
+	border-radius: 0 5px 5px 0;
+	background-color: transparent;
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: var(--metro-grey);
+	cursor: pointer;
+}
+
+.nextButton {
+	padding-top: 2.7rem;
+}
+
+.nextButton button {
+	width: 8rem;
+	height: 3rem;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	border-radius: 5px;
+	background-color: var(--metro-red);
+	border: none;
+	cursor: pointer;
+}

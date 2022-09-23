@@ -1,0 +1,84 @@
+@import "../../../variables.css";
+
+.navColOne {
+  background-color: var(--metro-red);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 800;
+  font-size: 17px;
+  padding: 0 30px;
+}
+
+.navColOne:first-child {
+  color: #ffffff;
+}
+
+.navColOne :not(:first-child) {
+  background-color: #ffffff;
+  color: var(--metro-red);
+  cursor: pointer;
+}
+
+.navColOne span {
+  margin: 10px;
+  padding: 8px 16px;
+}
+
+.navColTwo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px 30px;
+}
+
+.navColTwo span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.navColTwo img:first-of-type {
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.navColTwo p img:nth-of-type(1) {
+  margin-left: 6px;
+  margin-top: 2px;
+}
+
+.navColTwo p {
+  color: var(--metro-grey);
+  margin: 0 20px;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: 0.25s color ease-in-out;
+}
+
+.navColTwo p:hover {
+  color: var(--metro-red);
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  margin: 30px 0;
+  width: 185px;
+  background-color: #ffffff;
+  padding: 10px 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.active {
+  visibility: visible;
+}
+
+.dropdown p {
+  margin: 12px;
+}

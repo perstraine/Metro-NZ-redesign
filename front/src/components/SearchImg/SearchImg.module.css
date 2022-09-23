@@ -1,0 +1,29 @@
+@import "../../variables.css";
+
+.searchImg {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background: url("./assets/auckland-img.png");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
+.searchImg h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.searchImg img {
+  margin-right: 100px;
+  margin-top: 30px;
+}

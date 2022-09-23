@@ -1,0 +1,97 @@
+.mainContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	height: auto;
+}
+
+.innerContainer {
+	width: 36.8vw;
+	height: 85vh;
+	box-shadow: 0 4px 4px 0 #00000040;
+	margin-bottom: 6em;
+}
+
+.imgContainer {
+	width: 36.8vw;
+}
+
+.descContainer {
+	padding: 2rem;
+}
+
+.addressContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.addressPrice {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.addressPrice div:nth-child(1) {
+	font-size: 1.85em;
+	width: 50%;
+	font-weight: 900;
+}
+
+.addressPrice div:nth-child(2) {
+	font-size: 1.85em;
+	font-weight: 500;
+}
+
+.iconsMainContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.iconsInnerContainer {
+	display: flex;
+	align-items: center;
+	width: 90%;
+}
+
+.iconContainer {
+	display: flex;
+	align-items: center;
+	padding: 1em 4em 1em 0;
+}
+
+.iconContainer img {
+	padding-right: 1em;
+}
+
+.iconContainer div {
+	font-size: 2.25em;
+	font-weight: 600;
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.buttonInnerContainer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 90%;
+}
+
+.buttonInnerContainer button {
+	background-color: var(--metro-red);
+	border: none;
+	width: 8.8vw;
+	height: 6.68vh;
+	border-radius: 5px;
+	padding: 0.5em;
+	color: white;
+	font-size: 1em;
+	font-weight: 600;
+	cursor: pointer;
+}
