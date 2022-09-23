@@ -1,0 +1,14 @@
+services:
+  api:
+    container_name: mission6b-api
+    build: ./back
+    ports:
+      - 4000:4000
+  
+  front:
+    container_name: misision6b-front
+    build: ./front
+    ports:
+      - 3000:3000
+    depends_on:
+      - api
