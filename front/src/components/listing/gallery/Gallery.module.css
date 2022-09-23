@@ -43,12 +43,12 @@ color: #6E6E6E;
 }
 
 .galleryImage{
-    width: 250px;
-    height: 164px;
+    width: 220px;
+    height: 146px;
 }
 .galleryImageactive{
-    width: 250px;
-    height: 164px;
+    width: 220px;
+    height: 146px;
     opacity: 0.5;
     border: 1px solid #979797;
 }
@@ -65,8 +65,8 @@ color: #6E6E6E;
 }
 
 #showcaseImage{
-    width: 1000px;
-    height: 664px;
+    width: 900px;
+    height: 600px;
 }
 
 

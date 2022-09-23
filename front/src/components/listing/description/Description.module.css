@@ -96,7 +96,7 @@ letter-spacing: 0.1em;
 }
 
 #imageHolder{
-    width: 10%;
+    width: 20%;
 }
 
 #image{
@@ -133,7 +133,7 @@ letter-spacing: 0.1em;
 
 #phone, #email{
     display: flex;
-    width: 35%;
+    width: 40%;
     justify-content: space-evenly;
 }
 

@@ -46,7 +46,7 @@ export default function Listing() {
 				<>
 					<Gallery images={images} />
 					<Details details={details} />
-					<Description description={description} />
+					<Description description={description} houseId={HouseId} />
 				</>
 			)}
 

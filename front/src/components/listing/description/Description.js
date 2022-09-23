@@ -7,8 +7,9 @@ import map from "./assets/map.png";
 import printer from "./assets/printer.png";
 import facebook from "./assets/facebook.png";
 import twitter from "./assets/twitter.png";
+import { Link } from "react-router-dom";
 
-export default function Description({ description }) {
+export default function Description({ description , houseId}) {
   function descriptionSplit(desc) {
     const first = desc.split(".", 1)[0];
     const second = desc.slice(first.length + 2);
@@ -51,7 +52,9 @@ export default function Description({ description }) {
         </div>
         <div id={styles.right}>
           <div id={styles.buttonHolder}>
-            <div id={styles.button}>APPLY</div>
+            <div id={styles.button}>
+              <Link to={`/confirm/${houseId}`}>APPLY</Link>
+            </div>
           </div>
           <div id={styles.propManager}>
             <div id={styles.questions}>Still got questions?</div>
